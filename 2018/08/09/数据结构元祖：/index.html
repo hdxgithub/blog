@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="数据结构元祖： 排序算法：一个有序的元素组成的集合；优势更省内存 元祖是不可变对象；（在什么情况下是可变的；） 使用（）表示； t = tuple()元祖不支持赋值 容器对象都是一个可迭代是对象；t2 = (2,)一个元素的元组； 元祖加元祖返回一个新元组，不是就地修改。元祖支持索引（下标） 元祖不可通过索引赋值； 元祖是只读的，所以增，删，改方法都没有； 命名元祖：collections收集；">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://hdxgithub.github.io/2018/08/09/数据结构元祖：/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="数据结构元祖： 排序算法：一个有序的元素组成的集合；优势更省内存 元祖是不可变对象；（在什么情况下是可变的；） 使用（）表示； t = tuple()元祖不支持赋值 容器对象都是一个可迭代是对象；t2 = (2,)一个元素的元组； 元祖加元祖返回一个新元组，不是就地修改。元祖支持索引（下标） 元祖不可通过索引赋值； 元祖是只读的，所以增，删，改方法都没有； 命名元祖：collections收集；">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-08T01:17:12.561Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="数据结构元祖： 排序算法：一个有序的元素组成的集合；优势更省内存 元祖是不可变对象；（在什么情况下是可变的；） 使用（）表示； t = tuple()元祖不支持赋值 容器对象都是一个可迭代是对象；t2 = (2,)一个元素的元组； 元祖加元祖返回一个新元组，不是就地修改。元祖支持索引（下标） 元祖不可通过索引赋值； 元祖是只读的，所以增，删，改方法都没有； 命名元祖：collections收集；">
+  
+    <link rel="alternate" href="/hdxgithub.io/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/hdxgithub.io/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/hdxgithub.io/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/hdxgithub.io/">Home</a>
+        
+          <a class="main-nav-link" href="/hdxgithub.io/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/hdxgithub.io/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://hdxgithub.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-数据结构元祖：" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/hdxgithub.io/2018/08/09/数据结构元祖：/" class="article-date">
+  <time datetime="2018-08-09T14:20:33.933Z" itemprop="datePublished">2018-08-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>数据结构元祖：</p>
+<p>排序算法：一个有序的元素组成的集合；优势更省内存</p>
+<p>元祖是不可变对象；（在什么情况下是可变的；）</p>
+<p>使用（）表示；</p>
+<p>t = tuple()元祖不支持赋值</p>
+<p>容器对象都是一个可迭代是对象；t2 = (2,)一个元素的元组；</p>
+<p>元祖加元祖返回一个新元组，不是就地修改。元祖支持索引（下标）</p>
+<p>元祖不可通过索引赋值；</p>
+<p>元祖是只读的，所以增，删，改方法都没有；</p>
+<p>命名元祖：collections收集；</p>
+<p>from collections import namedtuple;导入</p>
+<p>Point变量，标识符</p>
+<p>_p(x=4,y=5)给人看的，字符串表达形式；.代表对象下面是什么东西</p>
+<p>冒泡法：</p>
+<p>优化点是在哪一趟提前结束</p>
+<p>object:对象；callable:调用</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://hdxgithub.github.io/2018/08/09/数据结构元祖：/" data-id="cjkmnpnuv0000tsu4v9iyg457" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/hdxgithub.io/2018/08/09/数字的处理函数：/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/hdxgithub.io/archives/2018/08/">August 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/hdxgithub.io/2018/08/09/数据结构元祖：/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/hdxgithub.io/2018/08/09/数字的处理函数：/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/hdxgithub.io/2018/08/09/杨辉三角形/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/hdxgithub.io/2018/08/09/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/hdxgithub.io/" class="mobile-nav-link">Home</a>
+  
+    <a href="/hdxgithub.io/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/hdxgithub.io/fancybox/jquery.fancybox.css">
+  <script src="/hdxgithub.io/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/hdxgithub.io/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
