@@ -5,15 +5,20 @@
   
 
   
-  <title>Hexo</title>
+  <title>字符串 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://hdxgithub.github.io/index.html">
+  <meta name="description" content="字符串字符串是一个序列，而且是不可变的，因为它是字面常量。 一个字符串一旦定义好就不能改变，因为它是一个字面常量。加出来的它是一个新的字符串和原来的字符串根本就没有关系，因为在内存中的地址根本就不一样。字符串是由一个一个字符组成，一个有序的数列。有序就可以迭代。有序就可以给它编号就支持索引，也支持负索引。 字符串是不可变对象；不可变的字面常量；是一个有顺序的序列； 字符串支持使用索引访问； 冒泡法">
+<meta name="keywords" content="字符串">
+<meta property="og:type" content="article">
+<meta property="og:title" content="字符串">
+<meta property="og:url" content="https://hdxgithub.github.io/2018/08/11/字符串/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="字符串字符串是一个序列，而且是不可变的，因为它是字面常量。 一个字符串一旦定义好就不能改变，因为它是一个字面常量。加出来的它是一个新的字符串和原来的字符串根本就没有关系，因为在内存中的地址根本就不一样。字符串是由一个一个字符组成，一个有序的数列。有序就可以迭代。有序就可以给它编号就支持索引，也支持负索引。 字符串是不可变对象；不可变的字面常量；是一个有顺序的序列； 字符串支持使用索引访问； 冒泡法">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-11T08:00:57.290Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="字符串">
+<meta name="twitter:description" content="字符串字符串是一个序列，而且是不可变的，因为它是字面常量。 一个字符串一旦定义好就不能改变，因为它是一个字面常量。加出来的它是一个新的字符串和原来的字符串根本就没有关系，因为在内存中的地址根本就不一样。字符串是由一个一个字符组成，一个有序的数列。有序就可以迭代。有序就可以给它编号就支持索引，也支持负索引。 字符串是不可变对象；不可变的字面常量；是一个有顺序的序列； 字符串支持使用索引访问； 冒泡法">
   
     <link rel="alternate" href="/blog/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,94 +65,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-线性结构" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2018/08/11/线性结构/" class="article-date">
-  <time datetime="2018-08-11T07:55:09.574Z" itemprop="datePublished">2018-08-11</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/blog/categories/python/">python</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2018/08/11/线性结构/">线性结构</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="线性结构"><a href="#线性结构" class="headerlink" title="线性结构"></a>线性结构</h3><p>切片是对于线性结构来讲</p>
-<p>可迭代的；for     in；可迭代的不一定是线性结构；</p>
-<p>len（）可以获取长度</p>
-<p>通过下标可以访问</p>
-<p>可以切片</p>
-<p>####学过的内置线性结构：</p>
-<p>列表，元组，字符串，bytes，bytearray</p>
-<p>不可变的：元祖，字符串，bytes</p>
-<p>可变的：列表，bytearray</p>
-<h4 id="切片"><a href="#切片" class="headerlink" title="切片"></a>切片</h4><ol>
-<li>通过索引区间访问的线性结构的一段数据</li>
-<li>sequence[start:stop]表示返回[start,stop]区间的子序列</li>
-<li>支持负索引</li>
-<li>start为0，可以省略</li>
-<li>stop为末尾，可以省略</li>
-<li>超过上界（右边界），就取到末尾；超过下界（左边界），取到开头</li>
-<li>start一定要在stop的左边</li>
-<li>[:]表示从头到尾，全部元素被取出。等效于copy()方法</li>
-</ol>
-<h4 id="切片举例"><a href="#切片举例" class="headerlink" title="切片举例"></a>切片举例</h4><p>a[:]可以拷贝一个字序列出来，等效于a.copy()</p>
-<p>print(‘<a href="http://www.0310dreamboy.com&#39;[4:10]" target="_blank" rel="noopener">www.0310dreamboy.com&#39;[4:10]</a>)</p>
-<p>print(‘<a href="http://www.0310dreamboy.com&#39;[:10]" target="_blank" rel="noopener">www.0310dreamboy.com&#39;[:10]</a>)</p>
-<p>print(‘<a href="http://www.0310dreamboy.com&#39;[4:]" target="_blank" rel="noopener">www.0310dreamboy.com&#39;[4:]</a>)</p>
-<p>print(‘<a href="http://www.0310dreamboy.com&#39;[:]" target="_blank" rel="noopener">www.0310dreamboy.com&#39;[:]</a>)</p>
-<p>print(‘<a href="http://www.0310dreamboy.com&#39;[:-1]" target="_blank" rel="noopener">www.0310dreamboy.com&#39;[:-1]</a>)</p>
-<p>print(‘<a href="http://www.0310dreamboy.com&#39;[4:-4]" target="_blank" rel="noopener">www.0310dreamboy.com&#39;[4:-4]</a>)</p>
-<p>print(‘<a href="http://www.0310dreamboy.com&#39;[4:50])右边超过边界好多" target="_blank" rel="noopener">www.0310dreamboy.com&#39;[4:50])右边超过边界好多</a></p>
-<p>print(b’<a href="http://www.0310dreamboy.com&#39;[-40:10])相当于从0到10，左边超过边界好多；返回类型是bytes。取序列是取它子序列并不改变类型。" target="_blank" rel="noopener">www.0310dreamboy.com&#39;[-40:10])相当于从0到10，左边超过边界好多；返回类型是bytes。取序列是取它子序列并不改变类型。</a></p>
-<p>print(bytearray(b’<a href="http://www.0310dreamboy.com&#39;)[-4:10]" target="_blank" rel="noopener">www.0310dreamboy.com&#39;)[-4:10]</a>)</p>
-<p>print(tuple(‘<a href="http://www.0310dreamboy.com&#39;)[-10:10]" target="_blank" rel="noopener">www.0310dreamboy.com&#39;)[-10:10]</a>)</p>
-<p>print(list(‘<a href="http://www.0310dreamboy.com&#39;)[-10:-4]" target="_blank" rel="noopener">www.0310dreamboy.com&#39;)[-10:-4]</a>)</p>
-<p>所谓子序列是copy出来的子序列，他是占内存空间的。</p>
-<h5 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">0310dr</span><br><span class="line">www.0310dr</span><br><span class="line">0310dreamboy.com</span><br><span class="line">www.0310dreamboy.com</span><br><span class="line">www.0310dreamboy.co</span><br><span class="line">0310dreamboy</span><br><span class="line">0310dreamboy.com</span><br><span class="line">b&apos;www.0310dr&apos;</span><br><span class="line">bytearray(b&apos;&apos;)</span><br><span class="line">()</span><br><span class="line">[&apos;e&apos;, &apos;a&apos;, &apos;m&apos;, &apos;b&apos;, &apos;o&apos;, &apos;y&apos;]</span><br></pre></td></tr></table></figure>
-<h4 id="步长切片"><a href="#步长切片" class="headerlink" title="步长切片"></a>步长切片</h4><ul>
-<li>[start:stoop:step]</li>
-<li>step为步长，可以为正，负整数，默认是1</li>
-<li>step要和start：stop同向，否返回空序列</li>
-</ul>
-<p>‘<a href="http://www.0310dreamboy.com&#39;[4:10:2]" target="_blank" rel="noopener">www.0310dreamboy.com&#39;[4:10:2]</a></p>
-<p>list(‘<a href="http://www.0310dreamboy.com&#39;)[4:10:-2]" target="_blank" rel="noopener">www.0310dreamboy.com&#39;)[4:10:-2]</a></p>
-<p>tuple(‘<a href="http://www.0310dreamboy.com&#39;)[-10:-4:2]" target="_blank" rel="noopener">www.0310dreamboy.com&#39;)[-10:-4:2]</a></p>
-<p>b’<a href="http://www.0310dreamboy.com&#39;[-4:-10:2]" target="_blank" rel="noopener">www.0310dreamboy.com&#39;[-4:-10:2]</a></p>
-<p>bytearray(b’<a href="http://www.0310dreamboy.com&#39;)[-4:-10:-2]" target="_blank" rel="noopener">www.0310dreamboy.com&#39;)[-4:-10:-2]</a></p>
-<h4 id="运行结果-1"><a href="#运行结果-1" class="headerlink" title="运行结果"></a>运行结果</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">01d&apos;</span><br><span class="line">[]</span><br><span class="line">(&apos;e&apos;, &apos;m&apos;, &apos;o&apos;)</span><br><span class="line">b&apos;&apos;</span><br><span class="line">bytearray(b&apos;.om&apos;)s</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://hdxgithub.github.io/2018/08/11/线性结构/" data-id="cjkp4sv1h0005p4u4xcn3tiny" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/线性结构/">线性结构</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-字符串" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-字符串" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/blog/2018/08/11/字符串/" class="article-date">
   <time datetime="2018-08-11T07:28:00.000Z" itemprop="datePublished">2018-08-11</time>
@@ -164,8 +82,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2018/08/11/字符串/">字符串</a>
+    <h1 class="article-title" itemprop="name">
+      字符串
     </h1>
   
 
@@ -406,172 +324,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-列表练习" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2018/08/10/列表练习/" class="article-date">
-  <time datetime="2018-08-10T07:15:17.000Z" itemprop="datePublished">2018-08-10</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/blog/categories/python/">python</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/blog/2018/08/11/线性结构/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
+          线性结构
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2018/08/10/列表练习/">列表练习</a>
-    </h1>
   
+    <a href="/blog/2018/08/10/列表练习/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">列表练习</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="列表练习"><a href="#列表练习" class="headerlink" title="列表练习"></a>列表练习</h3><p>使用列表时尽量使用索引，尽量不要用remove,inserd</p>
-<p>求100内的素数：</p>
-<h3 id="杨辉三角："><a href="#杨辉三角：" class="headerlink" title="杨辉三角："></a>杨辉三角：</h3><p>练习补零；</p>
-<p>知道未来要用多少个，开辟好空间，来替换的效率会很好。</p>
-<p>列表能用的就是索引，知道避免什么，</p>
-<p>列表查询速度快；列表不能一直扩大；不要一直频繁丢弃；一小批一小批处理；要了解内存状况；</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://hdxgithub.github.io/2018/08/10/列表练习/" data-id="cjkp4sv140000p4u4za8x7ijy" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/列表/">列表</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-数据结构元祖：" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2018/08/09/数据结构元祖：/" class="article-date">
-  <time datetime="2018-08-09T14:20:33.933Z" itemprop="datePublished">2018-08-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>数据结构元祖：</p>
-<p>排序算法：一个有序的元素组成的集合；优势更省内存</p>
-<p>元祖是不可变对象；（在什么情况下是可变的；）</p>
-<p>使用（）表示；</p>
-<p>t = tuple()元祖不支持赋值</p>
-<p>容器对象都是一个可迭代是对象；t2 = (2,)一个元素的元组；</p>
-<p>元祖加元祖返回一个新元组，不是就地修改。元祖支持索引（下标）</p>
-<p>元祖不可通过索引赋值；</p>
-<p>元祖是只读的，所以增，删，改方法都没有；</p>
-<p>命名元祖：collections收集；</p>
-<p>from collections import namedtuple;导入</p>
-<p>Point变量，标识符</p>
-<p>_p(x=4,y=5)给人看的，字符串表达形式；.代表对象下面是什么东西</p>
-<p>冒泡法：</p>
-<p>优化点是在哪一趟提前结束</p>
-<p>object:对象；callable:调用</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://hdxgithub.github.io/2018/08/09/数据结构元祖：/" data-id="cjkp4sv1f0004p4u404fy4y2d" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-数字的处理函数：" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2018/08/09/数字的处理函数：/" class="article-date">
-  <time datetime="2018-08-09T14:20:32.470Z" itemprop="datePublished">2018-08-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>数字的处理函数：</p>
-<p>import math </p>
-<p>import.floor(floor地板)（）；math.ceil(ceil天花板)（）；</p>
-<p>int(2.5),int(3.5)；取整数部分，小数点以后不关心</p>
-<p>（2，3）</p>
-<p>int(-2.5),int(-3.5)</p>
-<p>(-2,-3)</p>
-<p>3//2</p>
-<p>1</p>
-<p>3//-2</p>
-<p>-2</p>
-<p>“//”这个整除是向下取整</p>
-<p>round()四舍六入，五取偶；</p>
-<p>“/”表示自然除，</p>
-<p>列表list:</p>
-<p>列表就像一个排列整齐的队伍；</p>
-<p>可索引，线性结构，可变可迭代的，</p>
-<p>lst = []表示空列表/比较常用</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://hdxgithub.github.io/2018/08/09/数字的处理函数：/" data-id="cjkp4sv1a0001p4u4oj8txwvq" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-杨辉三角形" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2018/08/09/杨辉三角形/" class="article-date">
-  <time datetime="2018-08-09T14:20:28.793Z" itemprop="datePublished">2018-08-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">一行一行追加，通过上一行算出下一行。</span><br><span class="line">n = int(input(&apos;&gt;&gt;&apos;))  #输入几行</span><br><span class="line"></span><br><span class="line">a = [[1],[1,1]]       #第0行和第行，特殊的两行</span><br><span class="line">for i in range(2,n):  #从第2行开始循环到第n行</span><br><span class="line">    b=a[i-1]           #b = [1,1]每次求的那行的上一行</span><br><span class="line">    c=[1]              #行首1</span><br><span class="line">    for j in range(i-1):#每一行循环几次</span><br><span class="line">        c.append(b[j]+b[j+1])#每一次循环得到的数（每一行的中间几个数）</span><br><span class="line">    c.append(1)          #行尾追加1</span><br><span class="line">    a.append(c)          #在a这个大列表当中追加每一行地数</span><br><span class="line">for x in a:              </span><br><span class="line">    print(x)</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://hdxgithub.github.io/2018/08/09/杨辉三角形/" data-id="cjkp4sv1k0009p4u4bodcih1r" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
